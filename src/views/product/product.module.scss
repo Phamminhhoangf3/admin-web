@@ -1,0 +1,33 @@
+@mixin buttonColor($color) {
+    background-color: $color !important;
+    border-color: $color !important;
+    &:hover {
+        background-color: lighten($color, 8%) !important;
+        border-color: lighten($color, 8%) !important;
+    }
+}
+
+.product {
+    &-container {
+        height: 100%;
+        background-color: #fff;
+    }
+    &-content {
+        padding: 0 24px;
+    }
+    &-description {
+        text-align: left;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    &-button {
+        &-create {
+            @include buttonColor(#37c26b);
+        }
+        &-edit {
+            @include buttonColor(#fddd3f)
+        }
+    }
+}

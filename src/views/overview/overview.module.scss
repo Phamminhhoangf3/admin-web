@@ -1,0 +1,71 @@
+.overview {
+    &-container {
+        height: 100%;
+        background-color: #fff;
+    }
+    &-content {
+        padding: 16px 24px;
+        &-left {
+            padding: 14px;
+            min-height: 420px;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        }
+        &-right {
+            min-height: 420px;
+        }
+    }
+    &-list {
+        div[class="ant-row"] {
+            height: 420px;
+        }
+        &-item {
+            // height: 100%;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        }
+    }
+    &-card {
+        height: 420px;
+        display: flex;
+        flex-wrap: wrap;
+        &-item-1,
+        &-item-2,
+        &-item-3,
+        &-item-4 {
+            width: 50%;
+            height: 50%;
+            position: relative
+        }
+        &-item-1 {
+            padding-right: 10px;
+            padding-bottom: 10px;
+        }
+        &-item-2 {
+            padding-left: 10px;
+            padding-bottom: 10px;
+        }
+        &-item-3 {
+            padding-right: 10px;
+            padding-top: 10px;
+        }
+        &-item-4 {
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+        &-item-content {
+            height: 100%;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+            display: flex;
+            flex-direction: column;
+            padding: 60px 0;
+            h1, h2 {
+                margin: 0 auto;
+            }
+            &-icon {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                width: 40px;
+            }
+        }
+    }
+}
