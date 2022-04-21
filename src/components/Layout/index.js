@@ -36,7 +36,14 @@ export default function LayoutWeb({ children }) {
         <Layout style={{ minHeight: '100vh' }}>
             <Sider collapsed={collapsed}>
                 <Menu style={{ height: '100%' }} defaultSelectedKeys={[1]}>
-                    <div className={styles['logo']} style={{ padding: collapsed ? 10 : 0 }}>
+                    <div
+                        className={styles['logo']}
+                        style={{
+                            padding: collapsed ? 10 : 0,
+                            width: collapsed ? 80 : 130,
+                            height: collapsed ? 70 : 90,
+                        }}
+                    >
                         <img src='https://gudlogo.com/wp-content/uploads/2019/04/logo-hau-can-logistic-3.png' alt="logo" />
                     </div>
                     {
