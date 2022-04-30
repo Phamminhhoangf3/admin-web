@@ -207,6 +207,7 @@ export default function Product() {
                     </Col>
                 </Row>
                 <Table
+                    bordered
                     loading={loading}
                     dataSource={dataProducts}
                     columns={columns.map(column => {
@@ -266,7 +267,9 @@ export default function Product() {
                             }
                         }
                         return column
-                    })} bordered scroll={{ y: 500 }} />
+                    })}
+                    pagination={{ pageSize: 6 }}
+                />
             </div>
         </div>
     )
